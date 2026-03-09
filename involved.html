@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved | Kin Vow</title>
+  <meta name="description" content="Join the Kin Vow movement. Whether you want to start a chapter, spread the word, or just stay connected, there is a place for you here.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Kin<span>Vow</span></a>
+      <ul class="nav-links">
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="pillars.html">Six Pillars</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="chapter.html">Start a Chapter</a></li>
+        <li><a href="involved.html" class="btn btn-primary btn-sm">Get Involved</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="tagline">Get Involved</p>
+      <h1>There is a place for you <span class="highlight">here.</span></h1>
+      <p class="hero-subtitle">
+        You do not need to be a student, a teacher, or an expert. You just need
+        to believe that every person is worth hearing.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ========== WAYS TO GET INVOLVED ========== -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="fade-in text-center mb-xl">
+        <span class="overline">Ways to Participate</span>
+        <h2>Pick what fits you.</h2>
+      </div>
+
+      <div class="grid-3 stagger">
+        <div class="card fade-in">
+          <h4>Start a chapter</h4>
+          <p>
+            Bring Kin Vow to your school. We will help you with the constitution,
+            the framework, and the community. You bring the people.
+          </p>
+          <a href="chapter.html" style="font-weight: 500; color: var(--silver);">Learn how &rarr;</a>
+        </div>
+        <div class="card fade-in">
+          <h4>Spread the word</h4>
+          <p>
+            Share the Kin Vow message with your network. Talk about the universal
+            language barrier. Challenge people to think about the gap in their own
+            lives. Every conversation plants a seed.
+          </p>
+        </div>
+        <div class="card fade-in">
+          <h4>Share your story</h4>
+          <p>
+            Have you experienced the gap between what you know and what you can
+            express? Your story matters. It helps others see themselves in this
+            movement.
+          </p>
+        </div>
+        <div class="card fade-in">
+          <h4>Advise a chapter</h4>
+          <p>
+            If you are a teacher, counselor, or school staff member, consider
+            becoming a faculty advisor for a Kin Vow chapter. Your support makes
+            the space possible.
+          </p>
+        </div>
+        <div class="card fade-in">
+          <h4>Contribute resources</h4>
+          <p>
+            Research, activities, discussion guides, creative exercises. If you
+            have something that could help chapters hold better space, we want
+            to hear about it.
+          </p>
+        </div>
+        <div class="card fade-in">
+          <h4>Stay connected</h4>
+          <p>
+            Not ready to commit yet? No problem. Sign up below and we will keep
+            you in the loop as the movement grows.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== CONTACT FORM ========== -->
+  <section>
+    <div class="container-text">
+      <div class="fade-in text-center mb-xl">
+        <span class="overline">Say Hello</span>
+        <h2>We would love to hear from you.</h2>
+        <p>
+          Whether you have questions, ideas, resources to share, or just want to
+          connect, drop us a line.
+        </p>
+      </div>
+
+      <form data-action="collect" class="fade-in">
+        <div style="display: grid; gap: var(--space-sm);">
+          <label for="inv-name" style="font-weight: 500;">Your name</label>
+          <input type="text" id="inv-name" name="name" required
+            style="padding: 0.75rem 1rem; border: 1px solid var(--light-gray); border-radius: 8px; font-size: 1rem; font-family: inherit; background: var(--pure-white);">
+
+          <label for="inv-email" style="font-weight: 500; margin-top: var(--space-xs);">Email</label>
+          <input type="email" id="inv-email" name="email" required
+            style="padding: 0.75rem 1rem; border: 1px solid var(--light-gray); border-radius: 8px; font-size: 1rem; font-family: inherit; background: var(--pure-white);">
+
+          <label for="inv-interest" style="font-weight: 500; margin-top: var(--space-xs);">I am interested in</label>
+          <select id="inv-interest" name="interest"
+            style="padding: 0.75rem 1rem; border: 1px solid var(--light-gray); border-radius: 8px; font-size: 1rem; font-family: inherit; background: var(--pure-white);">
+            <option value="chapter">Starting a chapter</option>
+            <option value="advise">Advising a chapter</option>
+            <option value="share">Sharing my story</option>
+            <option value="resources">Contributing resources</option>
+            <option value="connect">Just staying connected</option>
+            <option value="other">Something else</option>
+          </select>
+
+          <label for="inv-message" style="font-weight: 500; margin-top: var(--space-xs);">Your message</label>
+          <textarea id="inv-message" name="message" rows="5"
+            style="padding: 0.75rem 1rem; border: 1px solid var(--light-gray); border-radius: 8px; font-size: 1rem; font-family: inherit; resize: vertical; background: var(--pure-white);"></textarea>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="margin-top: var(--space-sm); justify-self: start;">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ========== EMAIL DIRECT ========== -->
+  <section class="section-alt">
+    <div class="container-text">
+      <div class="fade-in text-center">
+        <span class="overline">Or email us directly</span>
+        <h2 style="margin-bottom: var(--space-xs);"><a href="mailto:hello@kinvow.com" style="color: inherit;">hello@kinvow.com</a></h2>
+        <p>We read every message.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Kin<span>Vow</span></a>
+          <p>A safe place to hold space.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="mission.html">Our Mission</a></li>
+            <li><a href="pillars.html">Six Pillars</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Act</h4>
+          <ul>
+            <li><a href="chapter.html">Start a Chapter</a></li>
+            <li><a href="involved.html">Get Involved</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:hello@kinvow.com">hello@kinvow.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Kin Vow. All rights reserved.</span>
+        <span>Knowledge. Identity. Narrative. Voice. Oneness. Worth.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
