@@ -12,18 +12,17 @@ lives in its own directory with a `SKILL.md` plus supporting `scripts/`,
 
 ## Prerequisite: the Stitch MCP server
 
-These skills drive Google Stitch through its **MCP server**. The server is an
-HTTP endpoint at `https://stitch.googleapis.com`, authenticated with an
-`X-Goog-Api-Key` header. It is already wired up for Claude Code in this repo via
-[`.mcp.json`](../../.mcp.json) at the project root:
+These skills drive Google Stitch through its **MCP server**. It is already wired
+up for Claude Code in this repo via [`.mcp.json`](../../.mcp.json) at the project
+root, using the Stitch MCP **proxy** (`@_davideast/stitch-mcp`) over stdio:
 
 ```json
 {
   "mcpServers": {
     "stitch": {
-      "type": "http",
-      "url": "https://stitch.googleapis.com",
-      "headers": { "X-Goog-Api-Key": "${STITCH_API_KEY}" }
+      "command": "npx",
+      "args": ["-y", "@_davideast/stitch-mcp@latest", "proxy"],
+      "env": { "STITCH_API_KEY": "${STITCH_API_KEY}" }
     }
   }
 }
@@ -36,12 +35,28 @@ committed**. To finish setup you only need to supply your own token:
    API Tokens** (see the official guide: <https://stitch.withgoogle.com/docs/mcp/setup/>).
 2. Make it available as `STITCH_API_KEY` — for Claude Code on the web, add it as
    an environment variable in your environment settings; for the local CLI,
-   `export STITCH_API_KEY=…` (or set it directly in your user `~/.claude.json`).
-   Never paste the token into chat, a PR, or any committed file.
-3. Start a fresh Claude Code session and confirm the `stitch*` tools appear.
+   `export STITCH_API_KEY=…`. Never paste the token into chat, a PR, or any
+   committed file.
+3. Start a fresh Claude Code session; the `stitch` MCP server should show
+   **connected** with its tools loaded. Verify anytime with
+   `STITCH_API_KEY=… npx -y @_davideast/stitch-mcp@latest doctor`.
 
 Until `STITCH_API_KEY` is set, the skills still load and provide guidance, but the
 tool calls they make (`stitch*:*`, uploads, generation) will not resolve.
+
+### Why the proxy instead of the raw HTTP endpoint
+
+Stitch also exposes a direct HTTP MCP endpoint
+(`https://stitch.googleapis.com/mcp`, auth header `X-Goog-Api-Key`). It
+authenticates fine, but its advertised tool schemas use JSON-Schema `$defs`/`$ref`
+(e.g. `#/$defs/ScreenInstance`) that current Claude Code releases cannot resolve,
+so the tools fail to load (`Connected · tools fetch failed`). The
+`@_davideast/stitch-mcp proxy` (maintained by a Google engineer) sits in front of
+the same API and presents schemas the client can load, so the tools work. If a
+future Claude Code version resolves `$defs` natively, you can switch `.mcp.json`
+back to the direct `type: http` endpoint. Note the proxy runs a third-party npm
+package via `npx`; Claude Code prompts you to approve project MCP servers before
+running them.
 
 ## Installed skills
 
