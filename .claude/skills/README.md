@@ -12,14 +12,36 @@ lives in its own directory with a `SKILL.md` plus supporting `scripts/`,
 
 ## Prerequisite: the Stitch MCP server
 
-These skills drive Google Stitch through its **MCP server**. To actually run the
-design/build workflows you must register the Stitch MCP server in your agent and
-provide credentials, per the official setup guide:
+These skills drive Google Stitch through its **MCP server**. The server is an
+HTTP endpoint at `https://stitch.googleapis.com`, authenticated with an
+`X-Goog-Api-Key` header. It is already wired up for Claude Code in this repo via
+[`.mcp.json`](../../.mcp.json) at the project root:
 
-> https://stitch.withgoogle.com/docs/mcp/setup/
+```json
+{
+  "mcpServers": {
+    "stitch": {
+      "type": "http",
+      "url": "https://stitch.googleapis.com",
+      "headers": { "X-Goog-Api-Key": "${STITCH_API_KEY}" }
+    }
+  }
+}
+```
 
-Until the MCP server is configured, the skills still load and provide guidance,
-but the tool calls they make (`stitch*:*`, uploads, generation) will not resolve.
+The key is read from the `STITCH_API_KEY` environment variable, so **no secret is
+committed**. To finish setup you only need to supply your own token:
+
+1. Generate a Stitch API token at <https://stitch.withgoogle.com> → **Settings →
+   API Tokens** (see the official guide: <https://stitch.withgoogle.com/docs/mcp/setup/>).
+2. Make it available as `STITCH_API_KEY` — for Claude Code on the web, add it as
+   an environment variable in your environment settings; for the local CLI,
+   `export STITCH_API_KEY=…` (or set it directly in your user `~/.claude.json`).
+   Never paste the token into chat, a PR, or any committed file.
+3. Start a fresh Claude Code session and confirm the `stitch*` tools appear.
+
+Until `STITCH_API_KEY` is set, the skills still load and provide guidance, but the
+tool calls they make (`stitch*:*`, uploads, generation) will not resolve.
 
 ## Installed skills
 
