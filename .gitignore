@@ -1,0 +1,6 @@
+# Secrets — never commit the Stitch API key or any local env/MCP overrides
+.env
+.env.*
+.mcp.local.json
+.claude/settings.local.json
+.stitch/credentials*
