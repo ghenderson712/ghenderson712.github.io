@@ -1,247 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Kin Vow</title>
-  <meta name="description" content="Kin Vow was founded by Gabriel Henderson, a teacher at River Valley High School who understands the gap between inner knowledge and outward expression firsthand.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="description" content="An American civic project about recognizing human worth and taking responsibility for how we treat one another. Learn the idea, current stage, and limits.">
+  <meta name="theme-color" content="#f4f3ef">
+  <title>About Kin Vow | A civic project in development</title>
+  <link rel="canonical" href="https://kinvow.org/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kin Vow">
+  <meta property="og:title" content="About Kin Vow | A civic project in development">
+  <meta property="og:description" content="An American civic project about recognizing human worth and taking responsibility for how we treat one another. Learn the idea, current stage, and limits.">
+  <meta property="og:url" content="https://kinvow.org/about.html">
+  <meta property="og:image" content="https://kinvow.org/assets/kin-vow-mark-ink-1024.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Kin Vow mark">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="About Kin Vow | A civic project in development">
+  <meta name="twitter:description" content="An American civic project about recognizing human worth and taking responsibility for how we treat one another. Learn the idea, current stage, and limits.">
+  <meta name="twitter:image" content="https://kinvow.org/assets/kin-vow-mark-ink-1024.png">
+  <meta name="twitter:image:alt" content="Kin Vow mark">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://kinvow.org/about.html#webpage", "url": "https://kinvow.org/about.html", "name": "About Kin Vow | A civic project in development", "description": "An American civic project about recognizing human worth and taking responsibility for how we treat one another. Learn the idea, current stage, and limits.", "inLanguage": "en", "isPartOf": {"@id": "https://kinvow.org/#website"}}]}</script>
+  <link rel="icon" type="image/svg+xml" href="assets/kin-vow-mark-ink.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/kin-vow-mark-ink-64.png">
+  <link rel="preload" as="font" href="assets/Inter-Variable.woff2" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+  <script src="print.js" defer></script>
 </head>
-<body>
+<body data-page="about">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Kin Vow home"><img src="assets/kin-vow-mark-ink.svg" alt="" width="36" height="36"><span>KIN VOW</span></a>
+    <button class="menu-button" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" hidden>Menu <span aria-hidden="true">+</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a data-nav="practice" href="practice.html">Practice</a><a data-nav="vow" href="vow.html">The vow</a><a data-nav="kin-table" href="kin-table.html">Kin Tables</a><a data-nav="about" aria-current="page" href="about.html">The idea</a><a data-nav="resources" href="resources.html">Resources</a>
+    </nav>
+  </header>
+  <main id="main">
 
-  <!-- ========== NAVIGATION ========== -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Kin<span>Vow</span></a>
-      <ul class="nav-links">
-        <li><a href="mission.html">Mission</a></li>
-        <li><a href="pillars.html">Six Pillars</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="chapter.html">Start a Chapter</a></li>
-        <li><a href="involved.html" class="btn btn-primary btn-sm">Get Involved</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
-
-
-  <!-- ========== PAGE HERO ========== -->
-  <section class="hero" style="min-height: 50vh;">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <p class="tagline">About Kin Vow</p>
-      <h1>Built by someone who <span class="highlight">lives the gap.</span></h1>
-      <p class="hero-subtitle">
-        Kin Vow was not born in a boardroom. It was born from a teacher who
-        understands firsthand what it feels like to know more than you can say.
-      </p>
-    </div>
-  </section>
-
-
-  <!-- ========== THE FOUNDER ========== -->
-  <section class="section-alt">
-    <div class="container-text">
-      <div class="fade-in">
-        <span class="overline">The Founder</span>
-        <h2>Gabriel Henderson</h2>
-        <p>
-          Gabriel is a teacher at River Valley High School. He works with students
-          every day, including English Learners and refugees who carry entire worlds
-          of knowledge inside them but struggle to express it in a system that was
-          not designed for them.
-        </p>
-        <p>
-          But Gabriel does not approach this as an outsider looking in. He is dyslexic.
-          He struggles with pronunciation, spelling, and real-time verbalization. He
-          often feels trapped inside his own mind, knowing exactly what he means but
-          fighting to connect those thoughts to the outside world.
-        </p>
-        <p>
-          That personal experience is the engine behind Kin Vow. When Gabriel sits
-          with a student who cannot find the right English word, he does not see a
-          language deficit. He sees himself. He sees the same gap he carries every day.
-          And he thought: what if we stopped pretending this is some people's problem
-          and started recognizing it as everyone's reality?
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========== THE ORIGIN ========== -->
-  <section>
-    <div class="container-text">
-      <div class="fade-in">
-        <span class="overline">The Origin</span>
-        <h2>How this started</h2>
-        <p>
-          The idea started simple: what if the "language barrier" is not just an
-          immigrant experience or a disability label? What if it is the most
-          universal thing about being human? Every person speaks two languages. The
-          one inside them and the one that comes out. Those two are never the same.
-        </p>
-        <p>
-          That insight led to research. Polanyi's Paradox, Vygotsky's inner speech,
-          the receptive-expressive gap, Bhabha's Third Space, Levelt's production
-          model, Milton's Double Empathy Problem. Each one confirmed the same truth
-          from a different angle: the gap between what you know and what you can
-          express is built into how human cognition works.
-        </p>
-        <p>
-          The synthesis of these frameworks into a single community-building concept
-          is Gabriel's original contribution. No existing organization, program, or
-          movement was doing what Kin Vow set out to do: reframe the language barrier
-          as shared human ground and build belonging from that foundation.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========== THE NAME ========== -->
-  <section class="section-alt">
-    <div class="container-text">
-      <div class="fade-in">
-        <span class="overline">The Name</span>
-        <h2>Why "Kin Vow"</h2>
-        <p>
-          "Kin" is Old English for your people. Not by blood. By choice. It comes
-          from the Proto-Germanic kunja, the same root that gives us "kind" and
-          "kin." Your kin are the ones you choose to stand with.
-        </p>
-        <p>
-          "Vow" is the solemn promise you make out loud. From the Latin votum,
-          from the Proto-Indo-European root meaning "to speak solemnly." A vow is
-          not casual. It is the kind of commitment you make when you mean it.
-        </p>
-        <p>
-          Together, Kin Vow is the commitment your chosen family makes: to hear
-          each other, to hold space for the gap, and to believe that every person
-          is worth listening to. Even when the words are not perfect. Especially then.
-        </p>
-        <p>
-          The acronym K.I.N. V.O.W. maps to the six pillars: Knowledge, Identity,
-          Narrative, Voice, Oneness, Worth. Every letter carries weight.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========== PHILOSOPHY ========== -->
-  <section>
-    <div class="container-text">
-      <div class="fade-in">
-        <span class="overline">Our Philosophy</span>
-        <h2>"All I know is I know nothing, but I think a lot."</h2>
-        <p>
-          That is Gabriel's line, and it echoes the Socratic humility that runs
-          through everything Kin Vow does. This organization does not claim to have
-          answers. It claims to think deeply and learn together.
-        </p>
-        <p>
-          Truth here is dynamic. It evolves as the community grows, learns, and
-          expands. What is true today gets refined tomorrow. Every understanding is
-          a snapshot. The mutual understanding is that the dynamic nature of reality
-          means this will grow into something more, something better, as the
-          community expands.
-        </p>
-      </div>
-
-      <div class="quote-block fade-in">
-        <p>"This project is itself a living example of its own mission."</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========== WHERE WE ARE ========== -->
-  <section class="section-alt">
-    <div class="container-text">
-      <div class="fade-in">
-        <span class="overline">Where We Are</span>
-        <h2>Starting at River Valley High School</h2>
-        <p>
-          Kin Vow is starting as a student-run club at River Valley High School.
-          Not a nonprofit. Not an institution. A group of students and a teacher
-          who believe that being heard is a right, not a privilege.
-        </p>
-        <p>
-          The long-term vision is a chapter model that any school, anywhere, can
-          adopt. Grassroots growth, student-led, from the ground up. But right now,
-          the work is local. Build the space. Prove the concept. Let the students
-          shape what it becomes.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========== CTA ========== -->
-  <section style="padding-bottom: 0;">
-    <div class="container">
-      <div class="cta-banner fade-in">
-        <h2>Want to be part of this?</h2>
-        <p>
-          Whether you want to start a chapter, contribute resources, or just
-          learn more, there is a place for you here.
-        </p>
-        <div class="btn-group" style="justify-content: center;">
-          <a href="involved.html" class="btn btn-primary btn-lg">Get Involved</a>
-          <a href="chapter.html" class="btn btn-ghost">Start a Chapter</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo">Kin<span>Vow</span></a>
-          <p>A safe place to hold space.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Learn</h4>
-          <ul>
-            <li><a href="mission.html">Our Mission</a></li>
-            <li><a href="pillars.html">Six Pillars</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resources.html">Resources</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Act</h4>
-          <ul>
-            <li><a href="chapter.html">Start a Chapter</a></li>
-            <li><a href="involved.html">Get Involved</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Connect</h4>
-          <ul>
-            <li><a href="mailto:hello@kinvow.com">hello@kinvow.com</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2026 Kin Vow. All rights reserved.</span>
-        <span>Knowledge. Identity. Narrative. Voice. Oneness. Worth.</span>
-      </div>
-    </div>
+<div class="wrap"><header class="page-heading"><p class="eyebrow">The idea</p><h1>We share a country.<br>We can share some care.</h1><p class="lead">America is an imperfect union of people whose lives are larger than the labels we give them. Kin Vow begins with a promise to recognize that humanity and act on it.</p></header></div>
+<section class="soft section"><div class="wrap split"><h2>Taking a vow<br>to be kin.</h2><p class="wide-statement">Recognize each person's worth. Take responsibility for how you treat them.</p></div></section>
+<section class="wrap section"><div class="story-column"><h2>A national hope, practiced close to home.</h2><p>The founding hope is to help Americans treat one another with respect again. We can hold different beliefs and still take responsibility for the country we live in, beginning with our own conduct.</p><p>The invitation is ordinary: listen, keep your word, offer useful help when it is wanted, and acknowledge the harm you cause. A useful practice should fit into real life and leave room for mistakes, limits, and honest repair.</p><h2>What kinship asks, and what it leaves to you.</h2><p>Here, being kin means recognizing shared human worth. You choose your relationships. No one gains a claim to your time, loyalty, private experiences, trust, or forgiveness.</p><p>American civic life is the initial focus. Human worth does not depend on citizenship, ancestry, religion, or party membership.</p><h2>Strong disagreement belongs here.</h2><p>People can name injustice, criticize a policy, challenge a false claim, and set a firm boundary. Respect does not require silence about harm. Anger or discomfort alone is not misconduct.</p><p>The proposed movement's name, resources, and gatherings would not endorse political parties or candidates. Participants keep their own civic commitments.</p></div></section>
+<section class="soft section" id="current-stage" aria-labelledby="stage-title"><div class="wrap split"><div><p class="eyebrow">Where we are</p><h2 id="stage-title">An idea ready<br>to be tested.</h2></div><div class="body-copy"><p>Kin Vow is a project in development. The vow, practice, and operating materials are drafts for a proposed adult pilot. No gathering, host organization, or official chapter is confirmed.</p><p>The proposed pilot would ask whether people return, find the practice useful, feel free to disagree, and can sustain the work. A decision to revise or stop would also be useful learning.</p><p>National growth would depend on responsible local hosting and experiences that others can repeat. We have no pilot results or evidence of national impact to report.</p><p>Kin Vow remains a working name pending rights review. No incorporated or tax-exempt organization is claimed here.</p><div class="actions"><a class="text-link" href="kin-table.html">Explore the proposed pilot</a><a class="text-link" href="evaluation.html">Read how we would learn</a></div></div></div></section>
+<section class="wrap section" id="privacy" aria-labelledby="privacy-title"><div class="story-column"><h2 id="privacy-title">Your practice can stay yours.</h2><p>This site has no account, signup, tracking, or pledge registry. The reminder tool keeps your entries in the current page. It does not send them to Kin Vow or save them in site storage.</p><p>Copying uses your device's clipboard. Downloading creates a text file on your device. Printing opens your browser's print options. Those actions happen only when you choose them.</p><p>Reloading or leaving the page can discard your entries. Your browser or device may have its own saving features. Keep names and identifying details out of reminders.</p><p>The website's reminder tool is separate from any future event's feedback process. Hosts would need to explain the actual contact routes and information handling before an event opens.</p><div class="actions"><a class="button" href="practice.html">Begin with one small step</a></div></div></section>
+  </main>
+  <footer class="site-footer wrap">
+    <div class="footer-top"><a class="brand" href="./"><img src="assets/kin-vow-mark-ink.svg" alt="" width="32" height="32"><span>KIN VOW</span></a><p>An imperfect union.<br>A promise to each other.</p><a class="text-link" href="practice.html">Begin with one small step</a></div>
+    <div class="footer-bottom"><p>A project in development. No gatherings are scheduled.<br>Kin Vow is a working name pending rights review.<br>No tracking. Your reminder entries are not sent to Kin Vow.</p><div><a href="resources.html">Resources</a><a href="about.html#privacy">Your privacy</a><a href="about.html#current-stage">Where we are</a></div></div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
