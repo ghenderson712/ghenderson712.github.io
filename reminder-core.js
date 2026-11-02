@@ -26,7 +26,9 @@
 
   function boundedText(value, limit) {
     if (typeof value !== "string") return "";
-    return Array.from(value.trim()).slice(0, limit).join("").trim();
+    var text = value.trim().slice(0, limit);
+    if (/[\uD800-\uDBFF]$/.test(text)) text = text.slice(0, -1);
+    return text.trim();
   }
 
   function createReminder(choice, action, revisit) {

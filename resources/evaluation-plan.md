@@ -106,16 +106,24 @@ Set a review date 30 days after the final pilot decision. At that review, obtain
 
 ## Decide what happens next
 
-For a pilot beginning with 12 participants, use these provisional signs to consider another cohort. Agree on the criteria for the actual starting group before reviewing results:
+Use the actual starting group, excluding hosts, to set these provisional counts before reviewing results. Each minimum is two-thirds of that group rounded up. Apply it separately to final respondents reporting three or four tables attended and final respondents reporting at least one useful practice:
 
-- At least eight final respondents report attending three or four tables.
-- At least eight final respondents report using one practice they found useful. Listening alone, an existing promise, wanted help, or a boundary can count.
+| Actual starting participants | Minimum reporting three or four tables | Minimum reporting a useful practice |
+| --- | --- | --- |
+| 8 | 6 | 6 |
+| 9 | 6 | 6 |
+| 10 | 7 | 7 |
+| 11 | 8 | 8 |
+| 12 | 8 | 8 |
+
+These are provisional judgments, not validated measures. A missing response is unknown, not a favorable response. If fewer people respond than the minimum, the count is not met; do not shrink the starting denominator to compensate. Participation remains optional. Listening alone, an existing promise, wanted help, or a boundary can count as a useful practice. Also consider these conditions:
+
 - Most respondents say the gatherings were worth their time, with no pattern of pressure to agree or disclose.
 - If a shared task was chosen, intended users consider it useful or participants explain why it was revised, stopped, or remains underway. Choosing no task does not count against the pilot.
 - Hosts can explain the actual workload, and a willing host pair can support another cohort within an agreed limit.
 - Every conduct report has received a response, and no unresolved pattern of intimidation remains.
 
-Report counts and denominators. For example, say “8 of 10 final respondents reported using a practice they found useful; 12 people attended the first gathering.” Describe those as self-reports and do not assume absent participants had the same experience. Adjust the provisional counts to the actual starting group before reviewing outcomes.
+Report counts and denominators. For example, say “8 of 10 final respondents reported using a practice they found useful; 12 people attended the first gathering.” Describe those as self-reports and do not assume absent participants had the same experience. Use the table for the actual starting group and retain both the starting and response denominators in every account.
 
 These signs support a judgment, not an automatic pass. A serious unresolved concern can justify pausing even with strong attendance. Low participation or mixed feedback can justify revising and repeating the pilot. Stopping is a valid result.
 
